@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Fredoka:wght@300..700&display=swap');
+
+
+body {
+    background-color: #16302B;
+    color: antiquewhite;
+    font-family: "Dongle", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Barrio"; 
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    
+}
+
+.divs {
+    background-color: #C0E5C840;
+    width: 50%;
+    margin: 16px auto;
+    padding: 42px;   
+    border-radius: 16px;
+    box-sizing: border-box;
+    min-width: 560px;
+}
+
+.divs h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    cursor: pointer;
+    background: none;
+    border-radius: 50%;;
+    height: 120px;
+    width: 120px;
+    border: 5px solid #16302B;
+    font-size: 25px
+}
+
+
+.button-casing p {
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.score {
+    text-align: center;
+    border: 5px solid #16302B;
+    padding: 14px;
+    border-radius: 16px;
+    height: 150px;
+    width: 150px;
+    padding: 24px;
+    flex: none;
+}
+
+.score h3 {
+    margin: 0;
+    margin: auto 0;
+}
+
+.score p {
+    font-size: 56px;
+    font-weight: 900;
+    margin-top: 25%;
+}
+
+.log {
+    border: 5px solid #16302B;
+    border-radius: 16px;
+    min-height: 42px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.log-entry {
+    padding: 0.5em 1em;
+    border-bottom: 2px solid #16302B;
+    width: 75%;
+    margin: 0;
+    padding: 1em;
+}
+
+.log-entry:first-child {
+    border-bottom: none;
+    margin-bottom: 1em;
+}
+.log-entry:last-child {
+    padding: 1em;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    padding-top: 162px;
+}
+
+.popup {
+    width: 25%;
+    margin: auto;
+    background-color: antiquewhite;
+    color: #16302B;
+    text-align: center;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.popup h2 {
+    margin: 1em 0;
+}
+
+.popup p {
+    margin: 1em 0;
+}
+
+.reset {
+    border: 3px solid #16302B;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+    background: none;
+    font-weight: 600;
+    color: #16302B;
+    cursor: pointer;
+}
+
+.visible {
+    display: block;
+}
