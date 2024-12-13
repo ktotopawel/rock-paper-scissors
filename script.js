@@ -18,23 +18,25 @@ const log = document.querySelector('.log');
 buttons.addEventListener('click', (event) => {
     let target = event.target;
     // console.log(target)
-    var logEntry = document.createElement('p');
-    logEntry.classList.add('log-entry');
-    log.append(logEntry);
+    if (target.id == 'rock' || target.id == 'paper' || target.id == 'scissors') {
+        var logEntry = document.createElement('p');
+        logEntry.classList.add('log-entry');
+        log.append(logEntry);
 
-    switch(target.id) {
-        case 'rock':
-            // alert("Chosen rock");
-            logEntry.textContent = playRound("rock");
-            break;
-        case 'scissors':
-            // alert("Chosen scissors");
-            logEntry.textContent = playRound("scissors");
-            break;
-        case 'paper':
-            // alert("Chosen paper");
-            logEntry.textContent = playRound("paper");
-            break;
+        switch(target.id) {
+            case 'rock':
+                // alert("Chosen rock");
+                logEntry.textContent = playRound("rock");
+                break;
+            case 'scissors':
+                // alert("Chosen scissors");
+                logEntry.textContent = playRound("scissors");
+                break;
+            case 'paper':
+                // alert("Chosen paper");
+                logEntry.textContent = playRound("paper");
+                break;
+        }
     }
     // console.log(`human score: ${humanScore}`);
     // console.log(`computer score: ${computerScore}`);
