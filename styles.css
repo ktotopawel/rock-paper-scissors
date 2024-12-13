@@ -186,3 +186,26 @@ h1 {
 .visible {
     display: block;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #16302B;
+    border-radius: 5px;
+    margin: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
