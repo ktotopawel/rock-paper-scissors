@@ -18,7 +18,6 @@ h1 {
 
 .divs {
     background-color: #C0E5C840;
-    width: 50%;
     margin: 16px auto;
     padding: 42px;   
     border-radius: 16px;
@@ -30,6 +29,23 @@ h1 {
     text-align: center;
     margin-top: 0;
     font-size: 32px;
+}
+
+.front {
+    display: flex;
+    flex-direction: row;
+    /* background-color: pink; */
+    width: 75%;
+    margin: auto;
+    gap: 20px;
+}
+
+.game {
+    flex-grow: 2;
+}
+
+.logs {
+    flex-shrink: 2;
 }
 
 .buttons {

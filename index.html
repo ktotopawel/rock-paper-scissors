@@ -12,46 +12,50 @@
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <div class="choice divs">
-        <h2>Choose:</h2>
-        <div id="buttons" class="buttons">
-            <div class="button-casing">
-            <button type="button" id="rock" class="button">✊</button>
-            <p>Rock</p>
+    <div class="front">
+        <div class="game">
+            <div class="choice divs">
+                <h2>Choose:</h2>
+                <div id="buttons" class="buttons">
+                    <div class="button-casing">
+                    <button type="button" id="rock" class="button">✊</button>
+                    <p>Rock</p>
+                    </div>
+                    <div class="button-casing">
+                    <button type="button" id="paper" class="button">✋</button>
+                    <p>Paper</p>
+                    </div>
+                    <div class="button-casing">
+                    <button type="button" id="scissors" class="button">✌</button>
+                    <p>Scissors</p>
+                    </div>
+                </div>
             </div>
-            <div class="button-casing">
-            <button type="button" id="paper" class="button">✋</button>
-            <p>Paper</p>
-            </div>
-            <div class="button-casing">
-            <button type="button" id="scissors" class="button">✌</button>
-            <p>Scissors</p>
+            <div class="score-display divs">
+                <h2>Score:</h2>
+                <div class="scores">
+                    <div class="human score">
+                        <h3>Your score:</h3>
+                        <p class="human-score-counter">0</p>
+                    </div>
+                    <div class="computer score">
+                        <h3>CPU score:</h3>
+                        <p class="computer-score-counter">0</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="score-display divs">
-        <h2>Score:</h2>
-        <div class="scores">
-            <div class="human score">
-                <h3>Your score:</h3>
-                <p class="human-score-counter">0</p>
-            </div>
-            <div class="computer score">
-                <h3>CPU score:</h3>
-                <p class="computer-score-counter">0</p>
+        <div class="logs divs">
+            <h2>Games log:</h2>
+            <div class="log">
             </div>
         </div>
-    </div>
-    <div class="divs">
-        <h2>Games log:</h2>
-        <div class="log">
-        </div>
-    </div>
-    <div class="overlay">
-        <div class="popup">
-            <!-- <h2>You win!</h2>
-            <p>Congratulations!</p> -->
-            <button class="reset" onclick="window.location.reload()">RESET</button>
+        <div class="overlay">
+            <div class="popup">
+                <!-- <h2>You win!</h2>
+                <p>Congratulations!</p> -->
+                <button class="reset" onclick="window.location.reload()">RESET</button>
+            </div>
         </div>
     </div>
 </body>
